@@ -1,0 +1,30 @@
+<div class="row">
+    <!-- random posts -->
+    <div class="col-md-8 ml-auto">
+        <div class="Black-text text-center">
+            <h3 class="h1"> News & Updates</h3>
+        </div>
+        <div class="card-body">
+            <?php  include 'backend/getPosts.php';?>
+
+        </div>
+
+    </div>
+
+    <!-- Recent Posts -->
+    <div class="col-md-4 ml-auto" id="recent-post-div">
+        <div class="Black-text text-center">
+            <h3 class="h3"> Recent News & Updates</h3>
+        </div>
+        <div class="card-body">
+            <form class="form-group my-2 my-lg-0" action="search.php" method="GET">
+                <input class="form-control mr-sm-2 mb-2" type="search" placeholder="Search  News with Titles" aria-label="Search" name="search" required>
+                <button class="btn btn-outline-success my-2 my-sm-0 mb-4 " type="submit" name="searchbtn">Search</button>
+            </form>
+
+            <?php  include 'backend/recentPost.php';?>
+
+        </div>
+
+    </div>
+</div>

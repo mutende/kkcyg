@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
+body {
+    background-color: #eee;
+    font-family: 'Alegreya Sans', sans-serif;
+    /* overflow: hidden; */
+    height: auto;
+}
+
+.nav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: .9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.7s;
+    margin-top: 56px;
+}
+
+.nav ul li {
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 20px;
+}
+
+.nav ul li a:hover {
+    color: white;
+}
+
+.nav .close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    margin-left: 50px;
+    font-size: 36px;
+}
+
+.slide a {
+    color: #000;
+    font-size: 36px;
+}
+
+#content {
+    padding: 2px;
+    transition: margin-left 0.7s;
+    /* overflow: hidden; */
+    width: 100%;
+    height: auto;
+}
+
+.fa-times {
+    color: #eee;
+}
+
+#icons {
+    margin-right: 5px;
+}
+
+
+/* css for sign up and login */
+
+.register {
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    margin-top: 3%;
+    padding: 3%;
+}
+
+.register-left {
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+
+.register-left input {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+.register-right {
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+
+.register-left img {
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.register-left p {
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+
+.register .register-form {
+    padding: 10%;
+    margin-top: 10%;
+}
+
+.btnRegister {
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+
+.register .nav-tabs {
+    margin-top: 3%;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+
+.register .nav-tabs .nav-link {
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.register .nav-tabs .nav-link:hover {
+    border: none;
+}
+
+.register .nav-tabs .nav-link.active {
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.register-heading {
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
+}
+
+
+/* style post panel in admin */
+
+.posts {
+    /* border: 2px solid brown; */
+    height: auto;
+    width: 50%;
+}
+
+.newPost input[type="text"],
+input[type="email"] {
+    margin-bottom: 2px;
+    padding: 5px;
+}
+
+.newPost input[type="file"] {
+    height: 38px;
+    margin-bottom: 7px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newPost button {
+    border-radius: 20px;
+    align-self: center;
+}
+
+.newPost button:hover {
+    border: 2px solid #00c6ff;
+}
+
+.newPost input[type="text"]:hover,
+input[type="email"]:hover {
+    border: 2px solid #00c6ff;
+}
+
+.newPost textarea {
+    margin-bottom: 7px;
+}
+
+.newPost textarea:hover {
+    border: 2px solid #00c6ff;
+}
+
+
+/* comments table */
+
+.comments-table a:hover {
+    border: 1px solid red;
+    text-decoration-color: red;
+    font-size: 17px;
+}
+
+.bd {
+    background-image: url("../../images/bgdiv.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    /* overflow: hidden; */
+    background-size: cover;
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../MDB/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link href="../MDB/css/mdb.min.css" rel="stylesheet">
+    <!--  font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon">
+    <!-- local css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title> admin kkcyg</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="container register">
+            <div class="row">
+                <div class="col-md-3 register-left">
+                    <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+                    <h3>KKCYG</h3>
+                    <p>Ready to bring change to the society. We are the change</p>
+                    <form action="backend/login.php" method="GET">
+                        <input type="submit" name="toregister" value="Register" /><br/>
+                    </form>
+                </div>
+                <div class="col-md-9 register-right">
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="register-heading">Admin Login</h3>
+                            <div class="row register-form">
+                                <div class="container">
+                                    <div class="col-md-8">
+                                        <form action="backend/login.php" method="POST">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="User Name *" name="username" required />
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" placeholder="Password *" name="password" required/>
+                                            </div>
+                                            <input type="submit" class="btnRegister" value="Login" name="login" />
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- Jquery -->
+        <script src="../MDB/js/jquery-3.3.1.min.js"></script>
+        <!-- popper js -->
+        <script src="../MDB/js/popper.min.js"></script>
+
+        <!-- bootsrap.js -->
+        <script src="../MDB/js/bootstrap.min.js"></script>
+</body>
+
+</html>

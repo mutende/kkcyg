@@ -1,0 +1,15 @@
+<div class=" container-fluid newPost form-group">
+    <h2 class="green-text h1 text-center">New Post</h2>
+
+    <form action="backend/newPost.php" method="POST" enctype="multipart/form-data">
+        <input type="text" class="form-control" name="title" placeholder="Post Title" maxlength="50" required>
+        <input type="text" class="form-control disabled" name="author" placeholder="Posting Author" value="<?php echo $_SESSION[ 'username'];?>" required>
+        <input type="email" class="form-control" name="contactsemail" placeholder="Email(exampling@gmail.com)" required>
+        <input type="text" class="form-control" name="contactsphone" placeholder="Phone Number(07...)" maxlength="10" required>
+        <textarea class="form-control" name="content" cols="20" rows="4" placeholder="Post Content" required></textarea>
+        <label for="" class="black-text">Upload Image</label><br>
+        <input type="file" class="black-text" name="p_image"><br>
+        <button type="submit" class="btn btn-success" name="post">Publish</button>
+    </form>
+
+</div>
